@@ -1,0 +1,1 @@
+import{a as e,c as t,t as s,o as a}from"./index.5aae65cd.js";const o=e.create({baseURL:"easydoc",timeout:5e3});var c={setup:e=>(o({url:"https://api.github.com/repos/yuyinws/easydoc/contents"}).then((e=>{console.log(e)})),(e,o)=>(a(),t("div",null,s(e.test),1)))};export default c;
