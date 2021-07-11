@@ -1,1 +1,0 @@
-import{c as a,F as s,r as l,a as e,o as t,b as n,t as d}from"./index.1b94ed8b.js";const i=e(" test page ");var u={setup:e=>(e,u)=>(t(),a(s,null,[i,(t(!0),a(s,null,l(e.list,(s=>(t(),a("div",{key:s.sha},[n("div",null,d(s.name),1),n("div",null,d(s),1)])))),128))],64))};export default u;
