@@ -12,5 +12,6 @@ export default defineConfig({
   optimizeDeps: {
     include: ['axios'],
   },
-  assetsDir: 'assets'
+  assetsDir: 'assets',
+  base:'/easydoc/'
 })
