@@ -1,37 +1,39 @@
 <template>
-    <div v-for="item in _data"
+    <div v-for="item in list"
          :key="item.sha">
-        <div>{{item.name}}</div>
-        <div>{{item}}</div>
+        <div @click="showContent(item)">{{item.name}}</div>
     </div>
+
+    <div>content:{{content}}</div>
 </template>
 
 
 
 <script>
-import { reactive, ref,onMounted,toRefs } from 'vue'
-import axios from 'axios'
-import config from '../config'
+import { reactive, onMounted, toRefs } from 'vue'
+import { getReposContent,getContent } from '@/api/index.js'
 export default {
     setup() {
-        const list = reactive({
-          _data:[]
+        const data = reactive({
+            list: [],
+            content:""
         })
 
-        const getData = () => {
-            axios({
-                method: 'GET',
-                url: `https://api.github.com/repos/${config.userName}/${config.repo}/contents/doc?ref=gh-pages&client_id=${config.clientId}&client_secret=${config.secrets}`,
-            }).then((res) => {
-                console.log(res)
-                list._data = res.data
-            })
+        const getData = async () => {
+            const response = await getReposContent()
+            data.list = response.data
+        }
+
+        const showContent = async (params) => {
+            const response = await getContent(params.path)
+            console.log(response.data)
+            data.content = response.data
         }
 
         onMounted(() => {
-          getData()
+            getData()
         })
-        return { ...toRefs(list) }
+        return { ...toRefs(data), showContent }
     },
 }
 </script>
