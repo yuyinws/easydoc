@@ -1,9 +1,33 @@
 import axios from 'axios'
-// const service = axios.create({
-//   baseURL: 'easydoc',
-//   timeout: 5000,
-// })
-// export default service
+import { Toast } from 'vant'
+axios.interceptors.response.use(
+  (res) => {
+    let data = res.data
+    const { state, subMsg, code } = data
+    if ((state && state !== 200) || (code && code !== '0')) {
+      Toast(`错误：${subMsg}`)
+      return res.data
+    }
+    return data
+  },
+  (err) => {
+    if (err.response) {
+      switch (err.response.status) {
+        case 403:
+          Toast({
+            type: 'error',
+            message: `错误：403`,
+          })
+          break
+        case 404:
+          Toast({
+            type: 'error',
+            message: `错误：404`,
+          })
+      }
+    }
+  }
+)
 
 export default function _axios(method, url, params) {
   let options = {
@@ -24,11 +48,11 @@ export default function _axios(method, url, params) {
   }
 
   return axios(options).then(
-    res => {
-        return res
+    (res) => {
+      return res
     },
-    error => {
-        return error
+    (error) => {
+      return error
     }
-)
+  )
 }
