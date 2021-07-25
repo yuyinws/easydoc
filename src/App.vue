@@ -1,8 +1,7 @@
 <template>
     <router-view />
+    <ReloadPrompt />
 </template>
-<script>
-export default {
-    setup() {},
-}
+<script setup>
+import ReloadPrompt from './ReloadPrompt.vue'
 </script>
