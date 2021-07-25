@@ -107,20 +107,20 @@ define("./sw.js",['./workbox-600da2ae'], function (workbox) { 'use strict';
    */
 
   workbox.precacheAndRoute([{
-    "url": "assets/index.618edf21.js",
-    "revision": "8f300c64950d036c9afa4c2a31d66bce"
+    "url": "assets/index.06905f48.js",
+    "revision": "06a08d33961d14235a230950316c0477"
   }, {
-    "url": "assets/Test.d2837c9c.js",
-    "revision": "ff35992c11f2d2028bb502dc2c5e6cf0"
+    "url": "assets/index.19f19b6c.css",
+    "revision": "72ad812a5da9fc053ff0c8f1f294490b"
   }, {
-    "url": "assets/vendor.00158530.js",
-    "revision": "4cec9abc0c0a6ebd69a4b8be03790828"
+    "url": "assets/Test.ffe7acbd.js",
+    "revision": "cc9130ff229ae4a2ef7d3f2a85eb44b3"
+  }, {
+    "url": "assets/vendor.a11da34c.js",
+    "revision": "dfd85e40a6f2b0aaa1b119c227d49da0"
   }, {
     "url": "index.html",
-    "revision": "2a04d6b8474f5742b6cb9131c1031e32"
-  }, {
-    "url": "registerSW.js",
-    "revision": "a326a3418c3286e8b74466745e43f5ef"
+    "revision": "f3c8d2ec23e242bd0c29059b289b3c3d"
   }, {
     "url": "favicon.svg",
     "revision": "835d34fd1f754f96ae4628aa4bd19fe5"
