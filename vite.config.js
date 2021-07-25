@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
 import { VitePWA } from 'vite-plugin-pwa'
-import config from '@/config.js'
+import config from './src/config'
 export default defineConfig({
   plugins: [
     vue(),
@@ -45,5 +45,5 @@ export default defineConfig({
     include: ['axios'],
   },
   assetsDir: 'assets',
-  base: /${config.repo}/`,
+  base: `/${config.repo}/`,
 })
