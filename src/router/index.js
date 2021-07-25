@@ -6,11 +6,11 @@ const routes = [
     name: 'index',
     component: () => import('@/views/catalog.vue'),
   },
-  {
-    path: '/content',
-    name: 'content',
-    component: () => import('@/views/content.vue'),
-  }
+  // {
+  //   path: '/content',
+  //   name: 'content',
+  //   component: () => import('@/views/content.vue'),
+  // }
 ]
 
 const router = createRouter({
