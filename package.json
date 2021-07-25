@@ -11,9 +11,10 @@
     "vue-axios": "^3.2.4"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^1.2.1",
     "@vue/compiler-sfc": "^3.0.4",
     "vite": "^2.4.3",
-    "vue-router": "^4.0.10",
-    "@vitejs/plugin-vue": "^1.2.1"
+    "vite-plugin-pwa": "^0.8.2",
+    "vue-router": "^4.0.10"
   }
 }
