@@ -1,5 +1,5 @@
 export default {
-  apiDomain: 'yuyinws.github.io',
+  apiDomain: 'blog.yuyinws.top',
   userName:'yuyinws',
   repo: 'easydoc',
   clientId: 'b46f59e6be5dff5ce391',
