@@ -1,11 +1,11 @@
 <template>
-  <v-header @changePop="changePop"></v-header>
+  <v-header :title="title" @changePop="changePop"></v-header>
   <v-popup :isPopShow="isPopShow">
     <template #default>
       <file-list @getText="getText"></file-list>
     </template>
   </v-popup>
-  <v-container :text="text"></v-container>
+  <v-container :text="text" :iscontainerLoading="iscontainerLoading"></v-container>
   <router-view />
 </template>
 
@@ -15,17 +15,21 @@ import vHeader from './Header.vue'
 import vPopup from './Popup.vue'
 import FileList from '@/views/fileList.vue'
 import vContainer from '@/views/container.vue'
-import { getCatalog, getContent } from '@/api/index.js'
+import { getContent } from '@/api/index.js'
 const isPopShow = ref(false)
-const text = ref('123123')
+const text = ref('**Empty**')
+const title = ref('Home')
+const iscontainerLoading = ref(false)
 const changePop = () => {
   isPopShow.value = !isPopShow.value
 }
 const getText = async (params) => {
-  const response = await getContent(params.path)
-  console.log(response)
-  text.value = response
+  title.value = params.name
   changePop()
+  iscontainerLoading.value = true
+  const response = await getContent(params.path)
+  text.value = response
+  iscontainerLoading.value = false
 }
 </script>
 <style scoped lang="scss">

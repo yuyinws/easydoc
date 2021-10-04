@@ -1,5 +1,5 @@
 <template>
-  <van-popup style="min-width:30%;height:100%" v-model:show="isPopShow" position="left">
+  <van-popup style="min-width:50%;height:100%" v-model:show="isPopShow" position="left">
     <slot></slot>
   </van-popup>
 </template>

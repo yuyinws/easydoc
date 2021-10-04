@@ -18,6 +18,7 @@
     "@vue/compiler-sfc": "^3.0.5",
     "autoprefixer": "9",
     "postcss": "7",
+    "sass": "^1.42.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vite": "^2.5.1",
     "vite-plugin-pwa": "^0.8.2",

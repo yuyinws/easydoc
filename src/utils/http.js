@@ -1,10 +1,8 @@
 import axios from 'axios'
 import { Toast } from 'vant'
 
-console.log(import.meta.env.MODE)
 if (import.meta.env.MODE === "development") {
   axios.defaults.baseURL = '/api'
-  console.log('asdasdqwqe')
 }else{
   axios.defaults.baseURL = '/'
 }
