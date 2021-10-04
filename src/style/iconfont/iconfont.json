@@ -1,0 +1,16 @@
+{
+  "id": "2848515",
+  "name": "easydoc",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3734350",
+      "name": "2侧边栏",
+      "font_class": "cebianlan",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    }
+  ]
+}

@@ -19,7 +19,7 @@ export default defineConfig({
     cors: true,
     proxy: {
       '^/api/.*': {
-        target: `${config.apiDomain}`,
+        target: `https://${config.apiDomain}`,
         changeOrigin: true,
         rewrite: path => path.replace(/^\/api/, '')
       },
