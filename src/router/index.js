@@ -6,13 +6,7 @@ const routes = [
     name: 'index',
     component: () => import('@/components/index.vue'),
 
-    children: [
-      {
-        path: 'catalog',
-        name: 'catalog',
-        component: () => import('@/views/catalog.vue'),
-      },
-    ],
+    children: [],
   },
   {
     path: '/tree',
