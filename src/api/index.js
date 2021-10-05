@@ -5,6 +5,5 @@ export function getFileList (path = 'doc') {
 }
 
 export function getContent (path) {
-  // return _axios('get',`https://${config.apiDomain}/${config.repo}/${path}`)
   return _axios('get',`/${config.repo}/${path}`)
 }

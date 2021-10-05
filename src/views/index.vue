@@ -11,8 +11,8 @@
 
 <script setup>
 import { ref, reactive } from 'vue'
-import vHeader from './Header.vue'
-import vPopup from './Popup.vue'
+import vHeader from '../components/Header.vue'
+import vPopup from '../components/Popup.vue'
 import FileList from '@/views/fileList.vue'
 import vContainer from '@/views/container.vue'
 import { getContent } from '@/api/index.js'

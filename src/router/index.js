@@ -1,22 +1,15 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   {
-    path: '/',
+    path: '/easydoc',
     name: 'index',
-    component: () => import('@/components/index.vue'),
-
-    children: [],
-  },
-  {
-    path: '/tree',
-    name: 'tree',
-    component: () => import('@/views/tree.vue'),
+    component: () => import('@/views/index.vue'),
   }
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 })
 
