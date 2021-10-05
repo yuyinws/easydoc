@@ -2,7 +2,7 @@
   <v-header :title="title" @changePop="changePop"></v-header>
   <v-popup :isPopShow="isPopShow">
     <template #default>
-      <file-list @getText="getText"></file-list>
+      <file-list @changePop="changePop" @getText="getText"></file-list>
     </template>
   </v-popup>
   <v-container :text="text" :iscontainerLoading="iscontainerLoading"></v-container>
