@@ -14,11 +14,11 @@ const routes = [
       },
     ],
   },
-  // {
-  //   path: '/content',
-  //   name: 'content',
-  //   component: () => import('@/views/content.vue'),
-  // }
+  {
+    path: '/tree',
+    name: 'tree',
+    component: () => import('@/views/tree.vue'),
+  }
 ]
 
 const router = createRouter({
