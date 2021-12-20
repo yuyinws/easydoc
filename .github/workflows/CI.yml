@@ -21,6 +21,8 @@ jobs:
 
       # 生成静态文件
       - name: Build
+        with:
+          VUE_APP_REPO: ${{ env.VUE_APP_REPO }}
         run: yarn install && yarn build
 
       # 部署到 GitHub Pages
