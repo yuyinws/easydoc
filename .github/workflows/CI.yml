@@ -20,8 +20,6 @@ jobs:
 
       # 生成静态文件
       - name: Build
-        with:
-          REPO: easydoc
         run: | 
           yarn install
           yarn build
