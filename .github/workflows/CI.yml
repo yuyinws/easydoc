@@ -27,6 +27,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          VUE_APP_REPO: easydoc
           BRANCH: gh-pages
           FOLDER: ./dist
 
