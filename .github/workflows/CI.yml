@@ -5,7 +5,8 @@ on:
   push:
     branches:
       - master
-
+env:
+  REPO: easydoc 
 # 任务
 jobs:
   build-and-deploy:
@@ -20,8 +21,6 @@ jobs:
 
       # 生成静态文件
       - name: Build
-        env:
-          REPO: easydoc 
         run: yarn install && yarn build
 
       # 部署到 GitHub Pages
