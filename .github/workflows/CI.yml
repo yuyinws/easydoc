@@ -6,7 +6,10 @@ on:
     branches:
       - master
 env:
-  REPO: easydoc 
+  REPO: easydoc
+  USERNAME: yuyinws
+  CLIENT_ID: b46f59e6be5dff5ce391
+  SECRETS: 6c555701c1d52183e9a8b4351365bb50914bcf6b
 # 任务
 jobs:
   build-and-deploy:
