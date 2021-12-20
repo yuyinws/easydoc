@@ -22,12 +22,15 @@ jobs:
       # 生成静态文件
       - name: Build
         run: yarn install && yarn build
+        with:
+          VUE_APP_REPO: ${{ env.VUE_APP_REPO }}
 
       # 部署到 GitHub Pages
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          VUE_APP_REPO: ${{ env.VUE_APP_REPO }}
           BRANCH: gh-pages
           FOLDER: ./dist
 
