@@ -20,8 +20,8 @@ jobs:
       # 生成静态文件
       - name: Build
         run: | 
-          pnpm install
-          pnpm build
+          yarn install
+          yarn build
 
       # 部署到 GitHub Pages
       - name: Deploy
