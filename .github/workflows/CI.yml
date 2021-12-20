@@ -20,6 +20,8 @@ jobs:
 
       # 生成静态文件
       - name: Build
+        env:
+          REPO: easydoc 
         run: yarn install && yarn build
 
       # 部署到 GitHub Pages
