@@ -1,7 +1,6 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@actions/core': ^1.6.0
   '@kangc/v-md-editor': ^2.3.7
   '@tailwindcss/postcss7-compat': ^2.2.16
   '@vitejs/plugin-vue': ^1.6.0
@@ -20,7 +19,6 @@ specifiers:
   wowjoy-vui: ^2.19.3
 
 dependencies:
-  '@actions/core': 1.6.0
   '@kangc/v-md-editor': 2.3.12_ae87cbba5ec93a01f3fe1197df446ca3
   axios: 0.21.4
   vant: 3.3.7_vue@3.2.26
@@ -41,18 +39,6 @@ devDependencies:
   wowjoy-vui: 2.23.0_vue@3.2.26
 
 packages:
-
-  /@actions/core/1.6.0:
-    resolution: {integrity: sha512-NB1UAZomZlCV/LmJqkLhNTqtKfFXJZAUPcfl/zqG7EfsQdeUJtaWO98SGbuQ3pydJ3fHl2CvI/51OKYlCYYcaw==}
-    dependencies:
-      '@actions/http-client': 1.0.11
-    dev: false
-
-  /@actions/http-client/1.0.11:
-    resolution: {integrity: sha512-VRYHGQV1rqnROJqdMvGUbY/Kn8vriQe/F9HR2AlYHzmKuM/p3kjNuXhmdBfcVgsvRWTz5C5XW5xvndZrVBuAYg==}
-    dependencies:
-      tunnel: 0.0.6
-    dev: false
 
   /@apideck/better-ajv-errors/0.3.1_ajv@8.8.2:
     resolution: {integrity: sha512-6RMV31esAxqlDIvVCG/CJxY/s8dFNVOI5w8RWIfDMhjg/iwqnawko9tJXau/leqC4+T1Bu8et99QVWCwU5wk+g==}
@@ -4799,11 +4785,6 @@ packages:
   /treemate/0.3.9:
     resolution: {integrity: sha512-/TE70ZXKy5s91EIM+Law46emnD50XmsKl6vlSjPt0XZnGtTgUS0qw3EDyC651CJYdkdpsMgW0HVpbH0xhpBjew==}
     dev: true
-
-  /tunnel/0.0.6:
-    resolution: {integrity: sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==}
-    engines: {node: '>=0.6.11 <=0.7.0 || >=0.7.3'}
-    dev: false
 
   /type-fest/0.16.0:
     resolution: {integrity: sha512-eaBzG6MxNzEn9kiwvtre90cXaNLkmadMWa1zQMs3XORCXNbsH/OewwbxC5ia9dCxIxnTAsSxXJaa/p5y8DlvJg==}
