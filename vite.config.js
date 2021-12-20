@@ -14,7 +14,7 @@ export default defineConfig({
     include: ['axios'],
   },
   assetsDir: 'assets',
-  base: `/${process.env.VUE_APP_REPO}/`,
+  base: `/${config.repo}/`,
   server: {
     cors: true,
     proxy: {

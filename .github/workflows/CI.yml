@@ -20,9 +20,8 @@ jobs:
       # 生成静态文件
       - name: Build
         run: | 
-          export VUE_APP_REPO=easydoc
-          yarn install
-          yarn build
+          pnpm install
+          pnpm build
 
       # 部署到 GitHub Pages
       - name: Deploy
