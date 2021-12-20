@@ -1,9 +1,7 @@
 export default {
-  // 必填项
-  userName: '', //github的用户名
-  repo: '', // github 仓库地址
-  // 选填项
-  clientId: '',
-  secrets: '',
-  apiDomain: '', //用于开发模式，普通用户可不填
+  apiDomain: 'git.yuyinws.top',
+  userName:process.env.USERNAME,
+  repo: process.env.REPO,
+  clientId: process.env.CLIENT_ID,
+  secrets:process.env.SECRETS
 }
