@@ -21,7 +21,7 @@ jobs:
 
       # 生成静态文件
       - name: Build
-        with:
+        env:
           VUE_APP_REPO: ${{ env.VUE_APP_REPO }}
         run: yarn install && yarn build
 
