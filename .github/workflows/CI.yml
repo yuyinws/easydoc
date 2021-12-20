@@ -21,7 +21,10 @@ jobs:
 
       # 生成静态文件
       - name: Build
-        run: yarn install && yarn build
+        run: | 
+          echo $REPO
+          yarn install
+          yarn build
 
       # 部署到 GitHub Pages
       - name: Deploy
